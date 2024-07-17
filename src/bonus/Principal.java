@@ -7,7 +7,7 @@ public class Principal {
 		Numeros iniciar= new Numeros();
 		
 		iniciar.entrada();
-		iniciar.ingresarDatos()
+		iniciar.ingresarDatos("Digite 1 numero");
 		
 		
 	}

@@ -6,11 +6,14 @@ public class Principal {
 	
 	public static void main(String[]args) {
 		
-		Principal miPrincipal=new Principal();
+		Flechas miPrincipal=new Flechas();
+		
+		miPrincipal.registrarDatos();
 		
 	}
 	
-	public Principal() {
+	
+	/*public Principal() {
 		flecha1=new Flechas();
 		flecha1.construirFlecha();
 		flecha1.imprimirEspacio();
@@ -25,5 +28,5 @@ public class Principal {
 		flecha3.construirFlecha();
 		flecha3.imprimirEspacio();
 		
-	}
+	}*/
 }

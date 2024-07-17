@@ -13,7 +13,7 @@ public class Numeros {
 		//Se crea un ciclo que nos realizara una repeticion de 5 veces el metodo ingresarDatos()
 		for( i=0; i<5 ;i++) {
 			//al llamar un metodo  por medio de la variable global , todo numero que ingresemos sera lo que guardara numero
-			numero= ingresarDatos("digite 1 numero");
+			numero= ingresarDatos("digite el: "+ i +" numero");
 			//Luego de tomar ese datos en numero, para a verificarlo con una condicional que nos indicara que 
 			//si el numero es divisible por dos y eso es igual a 0 es un numero par
 			if( numero %2 == 0) {

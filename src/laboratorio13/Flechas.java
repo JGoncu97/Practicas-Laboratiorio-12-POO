@@ -1,5 +1,7 @@
 package laboratorio13;
 
+import javax.swing.JOptionPane;
+
 public class Flechas {
 
 	int longitud;
@@ -27,18 +29,49 @@ public class Flechas {
 			imprime("-");
 		}
 		imprime(">");
+		
 	}
 	
 	
 	private void imprime(String simbolo) {
-		
 		if(color.equals("negro")) {
 			System.out.print(simbolo);
-		}else {
+		}else if(color.equals("rojo")) {
 			System.err.print(simbolo);
+		}else {
+			JOptionPane.showMessageDialog(null, "Solo se permite  los colores indicados");
+			
 		}
 		
 	}
 	
+	public void  registrarDatos() {
+		System.out.println("<<< Registrar Flechas >>>");
+		
+		int contador;
+	
+		
+		contador=Integer.parseInt(JOptionPane.showInputDialog("Cuantas Flechas Desea Construir"));
+		
+		for(int i=0;i<contador;i++) {
+			
+			longitud=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la longitud de su flecha"));
+			
+			if(longitud<0) {
+				JOptionPane.showMessageDialog(null, "La longitud no puede ser valores negativos");
+			}else {
+				
+				color=JOptionPane.showInputDialog("Por favor ingrese el color de la flecha: \n\n"
+						+ "negro \n"
+						+ "rojo \n");
+					construirFlecha();
+					imprimirEspacio();
+				
+			}
+			
+			
+		}
+	}
+
 	
 }
