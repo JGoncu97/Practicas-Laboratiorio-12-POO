@@ -6,27 +6,24 @@ public class Principal {
 	
 	public static void main(String[]args) {
 		
-		Flechas miPrincipal=new Flechas();
+		Principal miPrincipal=new Principal();
 		
-		miPrincipal.registrarDatos();
 		
 	}
 	
 	
-	/*public Principal() {
+	public Principal() {
 		flecha1=new Flechas();
 		flecha1.construirFlecha();
 		flecha1.imprimirEspacio();
 		
 		flecha2=new Flechas();
-		flecha2.longitud=34;
-		flecha2.color="rojo";
 		flecha2.construirFlecha();
 		flecha2.imprimirEspacio();
 		
-		flecha3=new Flechas(12,"negro");
+		flecha3=new Flechas();
 		flecha3.construirFlecha();
 		flecha3.imprimirEspacio();
 		
-	}*/
+	}
 }

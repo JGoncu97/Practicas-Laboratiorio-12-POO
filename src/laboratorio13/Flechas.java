@@ -24,6 +24,10 @@ public class Flechas {
 	}
 	
 	public void construirFlecha() {
+		longitud=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la longitud de su flecha"));
+		color=JOptionPane.showInputDialog("Por favor ingrese el color de la flecha: \n\n"
+				+ "negro \n"
+				+ "rojo \n");
 		
 		for(int i=0;i<longitud;i++) {
 			imprime("-");
@@ -34,6 +38,9 @@ public class Flechas {
 	
 	
 	private void imprime(String simbolo) {
+		
+		
+		
 		if(color.equals("negro")) {
 			System.out.print(simbolo);
 		}else if(color.equals("rojo")) {
@@ -45,33 +52,8 @@ public class Flechas {
 		
 	}
 	
-	public void  registrarDatos() {
-		System.out.println("<<< Registrar Flechas >>>");
-		
-		int contador;
 	
-		
-		contador=Integer.parseInt(JOptionPane.showInputDialog("Cuantas Flechas Desea Construir"));
-		
-		for(int i=0;i<contador;i++) {
-			
-			longitud=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la longitud de su flecha"));
-			
-			if(longitud<0) {
-				JOptionPane.showMessageDialog(null, "La longitud no puede ser valores negativos");
-			}else {
-				
-				color=JOptionPane.showInputDialog("Por favor ingrese el color de la flecha: \n\n"
-						+ "negro \n"
-						+ "rojo \n");
-					construirFlecha();
-					imprimirEspacio();
-				
-			}
-			
-			
-		}
-	}
+	
 
 	
 }
