@@ -14,14 +14,17 @@ public class Principal {
 	
 	public Principal() {
 		flecha1=new Flechas();
+		flecha1.agregarDatos();
 		flecha1.construirFlecha();
 		flecha1.imprimirEspacio();
 		
 		flecha2=new Flechas();
+		flecha2.agregarDatos();
 		flecha2.construirFlecha();
 		flecha2.imprimirEspacio();
 		
 		flecha3=new Flechas();
+		flecha3.agregarDatos();
 		flecha3.construirFlecha();
 		flecha3.imprimirEspacio();
 		
